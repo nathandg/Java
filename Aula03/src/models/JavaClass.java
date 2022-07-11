@@ -37,8 +37,9 @@ public class JavaClass {
         System.out.println(a + b);
     }
 
-    public void som2numbers(int a, int b){
-        System.out.println(a + b);
+    //this methode sum numA with numB and print the result;
+    public void som2numbers(int numA, int numB){
+        System.out.println(numA + numB);
     }
 
 

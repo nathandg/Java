@@ -8,7 +8,7 @@ public class main {
 
         System.out.println(myObj);
 
-        myObj.som2numbers();
+        myObj.som2numbers(45, 20);
 
     }
 
