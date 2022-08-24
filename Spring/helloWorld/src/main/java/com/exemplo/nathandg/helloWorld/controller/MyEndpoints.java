@@ -53,6 +53,14 @@ public class MyEndpoints
         return "All devices deleted";
     }
 
+    //http://localhost:8080/test/deleteByMac?macAddress=<macAddress>
+    @DeleteMapping("/deleteByMac")
+    public String deleteByMac(@RequestParam String macAddress)
+    {
+        myService.deleteByMac(macAddress);
+        return "Device " + macAddress + " deleted";
+    }
+
     //http://localhost:8080/test/update
     @PutMapping("/update")
     public Device update(@RequestBody Device device)

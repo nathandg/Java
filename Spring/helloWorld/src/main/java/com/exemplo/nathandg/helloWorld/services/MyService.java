@@ -11,4 +11,6 @@ public interface MyService
     List<Device> getAllDevices();
     Void deleteAll();
     Device update(Device device);
+
+    Device deleteByMac(String macAddress);
 }

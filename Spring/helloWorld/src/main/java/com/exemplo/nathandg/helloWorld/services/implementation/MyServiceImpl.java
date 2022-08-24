@@ -61,5 +61,16 @@ public class MyServiceImpl implements MyService
         return device1;
     }
 
+    @Override
+    public Device deleteByMac(String macAddress) {
+
+        Optional<Device> any1 = myDevices.stream().filter(any -> any.getMacAddress().equalsIgnoreCase(macAddress)).findAny();
+        Device device = any1.get();
+
+        myDevices.remove(device);
+
+        return null;
+    }
+
 
 }
